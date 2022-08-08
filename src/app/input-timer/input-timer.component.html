@@ -1,0 +1,47 @@
+<!-- <mat-form-field class="example-form-field" appearance="fill">
+  <mat-label>Clearable input</mat-label>
+  <input matInput type="text" [(ngModel)]="value">
+  <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
+
+{{updated}}
+
+{{control.getRawValue() | json}}
+
+
+<input type='time'> -->
+
+<div class="d-flex flex-row timer_block" [formGroup]='form'>
+  <label>Интервал розыгрыша</label>
+  <mat-form-field appearance="fill" class="block-h">
+    <mat-icon class="mr-2" matPrefix>calendar_month</mat-icon>
+    <input
+      formControlName="hour"
+      matInput
+      max="60"
+      min="0"
+      placeholder="00"
+      type="number"
+    />
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="block-m">
+    <input matInput formControlName="min" placeholder="00" type="number" />
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="block-s">
+    <input matInput formControlName="sec" placeholder="00" type="number" />
+    <div
+      class="
+        d-flex
+        flex-row
+        align-items-center
+        justify-content-center
+        grid_gap_2
+      "
+      matSuffix
+    >
+      <span>мин:сек</span>
+    </div>
+  </mat-form-field>
+</div>

@@ -1,0 +1,32 @@
+.timer_block {
+  position: relative;
+  display: flex;
+  width: 200px;
+
+  & > label {
+    position: absolute;
+    top: 2px;
+    left: 40px;
+    color: var(--text_2);
+    font-size: 11px;
+  }
+
+  & .block {
+    &-h{
+      width: 80px;
+    }
+    &-m{
+      width: 40px;
+    }
+    &-s{
+      width: 110px;
+    }
+  }
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
