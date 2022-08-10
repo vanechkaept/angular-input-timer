@@ -12,21 +12,20 @@
   }
 
   & .block {
-    &-h{
+    &-h {
       width: 80px;
     }
-    &-m{
+    &-m {
       width: 40px;
     }
-    &-s{
+    &-s {
       width: 110px;
     }
   }
 }
 
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

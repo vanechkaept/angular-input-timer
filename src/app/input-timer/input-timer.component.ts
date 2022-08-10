@@ -38,6 +38,12 @@ export class InputTimerComponent implements OnInit, AfterContentChecked {
         this.secondsToForm(seconds ?? 0);
         this.cdr.markForCheck();
       });
+
+      this.form.valueChanges
+        .subscribe((d) => {
+          console.log(d);
+          
+        })
   }
 
   ngAfterContentChecked(): void {}
